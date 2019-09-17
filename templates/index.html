@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block content %}
+
+<h2>Image Upload Classifier</h2>
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+        <input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+</div>
+<h2>Live Webcam Classifier</h2>
+<h4 id="liveresult">
+        <span> </span>
+    </h4>
+<div>
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+</div>
+<h6>Classifier your own stuff</h6>
+
+<div id='buttons'>
+    <button type="button" class="btn btn-primary btn-lg " id="class-a">Add A</button>
+    <button type="button" class="btn btn-primary btn-lg " id="class-b">Add B</button>
+    <button type="button" class="btn btn-primary btn-lg " id="class-c">Add C</button>
+</div>
+
+<h3 id="classresult">
+        <span> </span>
+    </h3>
+
+{% endblock %}
