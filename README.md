@@ -2,7 +2,7 @@
 
 ## https://github.com/mtobeiyf/keras-flask-deploy-webapp
 
-##https://codelabs.developers.google.com/codelabs/tensorflowjs-teachablemachine-codelab/index.html#0
+## https://codelabs.developers.google.com/codelabs/tensorflowjs-teachablemachine-codelab/index.html#0
 
 
 ## Getting started in 10 minutes
@@ -36,7 +36,7 @@ https://www.codecademy.com/learn/learn-css
 
 ### Clone the repo
 ```shell
-$ git clone https://github.com/mtobeiyf/keras-flask-deploy-webapp.git
+$ git clone https://github.com/DeluxeMonster/HomeworkWeek1
 ```
 
 ### Install requirements
